@@ -54,7 +54,7 @@ const skillsSection = {
       "⚡ Build and evaluate machine learning models for computer vision and NLP"
     ),
     emoji(
-      "⚡ Work towards production with MLOps: pipelines, APIs, Docker and cloud deployment"
+      "⚡ Work towards production with MLOps: pipelines, APIs, Docker and cloud deployment on Azure"
     ),
     emoji("⚡ Analyse and visualise data with Python, SQL and Power BI")
   ],
@@ -78,6 +78,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "power-bi",
       fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+      skillName: "azure",
+      fontAwesomeClassname: "fab fa-microsoft"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -135,10 +139,10 @@ const bigProjects = {
   subtitle: "THINGS I'VE BUILT AND WHAT I LEARNED FROM THEM",
   projects: [
     {
-      projectName: "MINDF: Mobile Indoor Navigation with Dynamic Flow (in progress)",
+      projectName:
+        "MINDF: Mobile Indoor Navigation with Dynamic Flow (in progress)",
       projectDesc:
         "My current third-year project, in a team of four, for the BUas AI Makerspace. The goal is a safe, reusable and measurable indoor navigation demonstrator for the Unitree Go2-W wheeled-legged robot, working in spaces shared with people, and built so future students can extend it. So far we have written the research proposal and a Business Requirements Document with a staged, prioritised scope: a baseline of autonomous point-to-point navigation with obstacle avoidance and safety controls (must have), then human-aware and predictive navigation (should have), and an experimental learned navigation policy (could have). We defined measurable success criteria (success rate, collision rate, minimum distance to people, time-to-goal, path efficiency, robustness and reusability) and safety requirements such as operator stop, speed limits and supervised testing. The plan is to build on the ROS 2 Nav2 navigation stack and prototype in simulation before moving to the real robot. Skills: robotics navigation, ROS 2 and Nav2 (planned), simulation, requirements analysis (BRD), safety and risk planning, defining KPIs, teamwork."
-    
     },
     {
       projectName: "Plant Image Analysis Service (Cloud MLOps)",

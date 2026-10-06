@@ -25,12 +25,9 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
-
       - name: Install and Build 🔧 # Build the Project
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

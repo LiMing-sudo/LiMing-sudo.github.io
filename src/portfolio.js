@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "YOUR NAME", // TODO: put your name here (also shown in the top-left of the site)
+  title: "Hi, I'm YOUR NAME", // TODO: put your first name here
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "First-year university student who likes building AI tools that help people learn. Take a look at my projects below 🧬"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Empty = hides the resume button. Paste a link to your CV here later if you want one
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/YOUR-USERNAME", // TODO: your GitHub profile
+  linkedin: "", // Optional: e.g. "https://www.linkedin.com/in/your-name/"
+  gmail: "", // Optional: your email address
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +48,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "BUILDING AI TOOLS THAT HELP PEOPLE LEARN",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Train and evaluate image classification models (convolutional neural networks)"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Make AI results understandable with explainability (XAI) and robustness tests"
+    ),
+    emoji(
+      "⚡ Design app prototypes and test them with real users through A/B surveys"
     )
   ],
 
@@ -65,325 +66,158 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
-// Education Section
+// Education Section (hidden for now, add your university here later)
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
+  display: false, // Set true once you add your school below
+  schools: []
 };
 
-// Your top 3 proficient stacks/tech experience
+// Your top 3 proficient stacks/tech experience (hidden)
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  viewSkillBars: false,
+  experience: [],
+  displayCodersrank: false
 };
 
-// Work experience section
+// Work experience section (hidden)
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
+  display: false,
+  experience: []
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+Hidden: your projects are shown in the Projects section below instead. */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false",
+  display: false
 };
 
-// Some big projects you have worked on
+// Projects
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "THINGS I'VE BUILT AND WHAT I LEARNED FROM THEM",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/mindf.png"),
+      projectName: "MINDF: Mobile Indoor Navigation with Dynamic Flow (in progress)",
+      projectDesc:
+        "My current third-year project, in a team of four, for the BUas AI Makerspace. The goal is a safe, reusable and measurable indoor navigation demonstrator for the Unitree Go2-W wheeled-legged robot, working in spaces shared with people, and built so future students can extend it. So far we have written the research proposal and a Business Requirements Document with a staged, prioritised scope: a baseline of autonomous point-to-point navigation with obstacle avoidance and safety controls (must have), then human-aware and predictive navigation (should have), and an experimental learned navigation policy (could have). We defined measurable success criteria (success rate, collision rate, minimum distance to people, time-to-goal, path efficiency, robustness and reusability) and safety requirements such as operator stop, speed limits and supervised testing. The plan is to build on the ROS 2 Nav2 navigation stack and prototype in simulation before moving to the real robot."
+    
+    },
+    {
+      image: require("./assets/images/mlops-plant.png"),
+      projectName: "Plant Image Analysis Service (Cloud MLOps)",
+      projectDesc:
+        "A second-year team project (5 students, agile scrum with sprints, reviews and retrospectives) to turn earlier computer vision models for plant phenotyping into a production-grade application deployed in the cloud on Azure, for the use case of the Netherlands Plant Eco-phenotyping Centre (NPEC). The service takes a plant image and returns segmentation masks and landmark locations with a confidence score for each prediction, and is built to be modular so it can work with any robotic platform. The project covered the full MLOps lifecycle: a tested and documented Python package with a command-line interface, an inference API, Docker containers, data and training pipelines with versioned data, code and models for auditing, automated CI/CD deployment, monitoring for model drift and other technical and business metrics, and automatic retraining from new data or user feedback."
+    },
+    {
+      image: require("./assets/images/research-anomaly.png"),
+      projectName: "Research: Feature Depth in Industrial Anomaly Detection",
+      projectDesc:
+        "A second-year research project written in the style of a scientific study. The question: do texture-based defects need different feature extraction than geometric (object) defects when detecting faults in manufactured products? I wrote a research proposal with a literature review and used PaDiM as the baseline (frozen pretrained WideResNet-50-2 features, Gaussian modelling and Mahalanobis distance scoring). On the MVTec AD benchmark (15 product categories) I compared shallow, deep and multi-layer features using image-level AUROC, pixel-level AUROC and AUPRO, tested three hypotheses with paired t-tests, and studied the effect of PCA. Findings: the standard multi-layer baseline localised defects best overall (pixel AUROC 0.95, AUPRO 0.75) and had the best composite score in most categories of both types. Deep features matched it at image-level detection (0.91 vs 0.90, no significant difference), and shallow-only features were the weakest and least stable. The idea that shallow features suit texture defects was only partly supported (they were best in 2 of 5 texture categories), although the gap between shallow and deep features was larger for texture than for object categories. Reducing features to 50 PCA components consistently lowered performance. Limitations I identified: the texture vs geometric split is a blunt distinction, and I only tested 15 categories."
+    },
+    {
+      image: require("./assets/images/nlp-emotions.png"),
+      projectName: "Emotion Classification in Australian English",
+      projectDesc:
+        "A team NLP project (second year) on classifying emotions in text, based on Paul Ekman's six core emotions: happiness, sadness, anger, surprise, fear and disgust. We worked with GoEmotions, about 54K Reddit comments labelled across 27 emotions plus neutral, and applied our model to a transcript of Australian Survivor to test how NLP copes with authentic, messy spoken language, since most earlier studies use clean, scripted text. The project covers the business value (for example helping media teams spot emotional moments in reality TV), the limits of the approach (the gap between Reddit text and spoken Australian dialogue, sarcasm, slang, accents, transcription errors, and subjective emotion labels), and the ethics of analysing human emotion data, guided by the ACM Code of Ethics. Next steps: build a localized Australian English dataset with diverse annotators."
+    },
+    {
+      image: require("./assets/images/digitaladvisor.png"),
+      projectName: "Digital Advisor",
+      projectDesc:
+        "A team project (first year) building an AI advisor for stock investment, using NASDAQ-100 data. We explored the data, engineered lag and rolling-statistics features, and clustered companies (K-Means, Agglomerative, DBSCAN) to pick 7 outlier stocks: APP, META, BKNG, NVDA, PEP, PLTR and TSLA. Our first SARIMAX models produced weak, near-flat forecasts on strongly trending stocks, so we moved to LSTM neural networks with hyperparameter tuning (feature selection, learning rate, early stopping, PCA), reaching R² between 0.82 and 1.00 depending on the stock. We also designed a PostgreSQL database and a web dashboard for viewing predictions, making trades and monitoring a portfolio, and assessed the system as limited-risk under the EU AI Act, with transparency and human oversight as requirements."
+    },
+    {
+      image: require("./assets/images/cellsprout.png"),
+      projectName: "CellSprout",
+      projectDesc:
+        "A prototype learning app that helps students connect textbook knowledge with hands-on practice by identifying blood cells from images. I built a convolutional neural network that classifies 8 blood cell classes with 96% accuracy (2,469 of 2,572 test images correct), compared with 57% for manual human classification. I also examined the model with explainability (XAI) and adversarial image tests, and ran A/B user surveys on two versions of the app's design. The app itself is a design prototype that shows how the product would look and feel.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Watch Demo Video",
+          url: "https://www.loom.com/share/e1e26151a4da4b6f84bb96e0ef6d33f0?sid=2ab79028-d72a-47e6-a56b-7f7f53f58c47"
         }
         //  you can add extra buttons here.
       ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
     }
+    // To add another project, copy a block above (from { to }) after a comma
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Achievement Section (hidden)
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  achievementsCards: [],
+  display: false
 };
 
-// Blogs Section
+// Blogs Section (hidden)
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  displayMediumBlogs: "false",
+  blogs: [],
+  display: false
 };
 
-// Talks Sections
+// Talks Sections (hidden)
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  talks: [],
+  display: false
 };
 
-// Podcast Section
+// Podcast Section (hidden)
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  podcast: [],
+  display: false
 };
 
-// Resume Section
+// Resume Section (hidden)
+
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Want to talk about my projects or just say hi? My inbox is open.",
+  number: "", // Empty = hidden
+  email_address: "your.email@example.com" // TODO: your email address
 };
 
-// Twitter Section
+// Twitter Section (hidden)
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "",
+  display: false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set true if you are looking for a job/internship. Shown as "Open for opportunities" in the footer
 
 export {
   illustration,
